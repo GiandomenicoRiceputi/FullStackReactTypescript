@@ -1,0 +1,35 @@
+h1 {
+  font-size: 3em;
+  color: #3F51B5;
+  text-align: center;
+  margin-bottom: 1em;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+}
+h1[role=heading] {
+  role: "heading";
+  aria-level: 1;
+}
+
+input {
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  font-size: 1.5em;
+}
+input::placeholder {
+  color: #4CAF50;
+}
+input:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0px 0px 3px #2196F3;
+}
+input[role=textbox] {
+  role: "textbox";
+  aria-label: "Type a good word for you";
+  aria-required: true;
+}
+
+/*# sourceMappingURL=textInput.css.map */
