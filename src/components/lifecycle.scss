@@ -1,0 +1,43 @@
+
+
+$primary-color: #0074d9;
+$secondary-color: #7fdbff;
+$text-color: #333;
+
+/* Accessibility */
+/* Increase text size and weight for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Add aria-label to buttons */
+button {
+  margin-right: 0.5em;
+  &[aria-label] {
+    padding: 10px 15px;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 5px;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
