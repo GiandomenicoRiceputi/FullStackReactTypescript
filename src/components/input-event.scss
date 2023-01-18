@@ -1,0 +1,27 @@
+// Variables for colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+
+// Input field styles
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid $secondary-color;
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
+  &:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+  }
+  &[aria-invalid="true"] {
+    border-color: $danger-color;
+  }
+}

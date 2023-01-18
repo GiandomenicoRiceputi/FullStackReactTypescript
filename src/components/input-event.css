@@ -1,0 +1,28 @@
+input[type=text],
+input[type=password],
+input[type=email] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #6c757d;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+input[type=text]:disabled,
+input[type=password]:disabled,
+input[type=email]:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+input[type=text][aria-invalid=true],
+input[type=password][aria-invalid=true],
+input[type=email][aria-invalid=true] {
+  border-color: #dc3545;
+}
+
+/*# sourceMappingURL=input-event.css.map */

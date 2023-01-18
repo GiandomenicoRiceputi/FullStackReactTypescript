@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Card from "./components/Card";
-import Icon from "./components/Icon";
+import InputEvent from "./components/InputEvent";
 
 function App() {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setInputValue(event.target.value);
+  };
+
   return (
     <>
-      <Header home="Home" contact="Contact" hireMe="Hire Me" />
-      <Card icon={<Icon />}>
-        <h2>Shake your booty Iris !!!</h2>
-      </Card>
+      <h1>{inputValue}</h1>
+      <InputEvent value={inputValue} onChange={handleChange} />
     </>
   );
 }
